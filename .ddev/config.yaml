@@ -1,12 +1,12 @@
 name: browsersynctest
 type: php
-docroot: public
+docroot: public/browsersynctest
 php_version: "8.0"
 webserver_type: nginx-fpm
 router_http_port: "80"
 router_https_port: "443"
 xdebug_enabled: false
-additional_hostnames: []
+additional_hostnames: ["browsersynctest2"]
 additional_fqdns: []
 database:
   type: mariadb
@@ -17,6 +17,7 @@ use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 nodejs_version: "16"
+omit_containers: [db]
 
 # Key features of ddev's config.yaml:
 
