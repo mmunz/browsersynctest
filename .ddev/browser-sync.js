@@ -1,4 +1,3 @@
-// #ddev-generated
 const {createProxyMiddleware} = require('http-proxy-middleware');
 
 let docroot = process.env.DDEV_DOCROOT;
