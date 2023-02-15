@@ -19,7 +19,7 @@ hostnames.forEach(function (hostname) {
 })
 
 module.exports = {
-    files: [docroot, "app", "resources/views/**/*.php"],
+    files: ['public', docroot, "app", "resources/views/**/*.php"],
     ignore: ["node_modules", filesdir, "vendor"],
     open: false,
     ui: false,
